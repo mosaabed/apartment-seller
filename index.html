@@ -34,7 +34,23 @@
     <hr>
 
     <div id="results"></div>
+    <script id="menu-template" type="text/x-handlebars-template">
+        <ul>
+          {{#each this}}
+            <li>
+                <img src = {{img}} style="width:200px;height:150px;" >
+                <span >address :{{address}}</span> -  
+                <span>price: {{price}}</span> - <span>rooms: {{rooms}}</span> - 
+                <span>is there aparking :{{parking}}</span> - 
+                <span>immediate:  {{immediate}}</span> - 
+                <span>name: {{contactDetails.nmae }}</span> - 
+                <span>email: {{contactDetails.email }}</span> 
+            </li>
+          {{/each}}
+        </ul>
+      </script>
 
+      
     <!-- Your Code Here -->
     <!-- You should start doing handlebar stuff here -->
     <!-- Your Code Here -->
